@@ -61,12 +61,12 @@ function unitConversion() {
 	
 	if(unit == "°C") {
 		T = (T * 1.8) + 32;
-		$("#temp").html(T.toFixed(2));
+		$("#temp").html(T.toFixed(1));
 		$("#unit").html("°F");
 	}
 	else {
 		T = (T - 32) / 1.8;
-		$("#temp").html(T.toFixed(2));
+		$("#temp").html(T.toFixed(1));
 		$("#unit").html("°C");
 	}
 	
