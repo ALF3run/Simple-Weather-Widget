@@ -36,7 +36,7 @@ function errorGetPos() {
 
 function openWeatherCall(json) {
 	$("#city").val(json.name + ", " + json.sys.country);
-	$("#temp").html(json.main.temp);
+	$("#temp").html(json.main.temp.toFixed(1));
 	$("#hum").html(json.main.humidity);
 	$("#icon").html("<img src='http://openweathermap.org/img/w/" + json.weather[0]["icon"] + ".png'>");
 	$("#weather").html(json.weather[0]["description"]);
